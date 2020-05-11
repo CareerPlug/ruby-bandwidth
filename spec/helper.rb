@@ -19,7 +19,7 @@ end
 
 
 RSpec.configure do |conf|
-  include Bandwidth
+  include OldBandwidth
 end
 
 module Helper
@@ -58,7 +58,7 @@ module Helper
   end
 end
 
-class  Bandwidth::Client
+class  OldBandwidth::Client
   alias_method :old_initialize, :initialize
   def initialize (user_id = nil, api_token = nil, api_secret = nil, api_endpoint = 'https://api.catapult.inetwork.com', api_version = 'v1', &configure)
     @configure_faraday = configure

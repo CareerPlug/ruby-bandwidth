@@ -1,9 +1,9 @@
 # This is a demo of sending of mms and uploading file to the api server
 require "ruby-bandwidth"
 
-Client = Bandwidth::Client
-Message = Bandwidth::Message
-Media = Bandwidth::Media
+Client = OldBandwidth::Client
+Message = OldBandwidth::Message
+Media = OldBandwidth::Media
 
 # Fill these options before run this demo
 Client.global_options = {:user_id => "", :api_token => "", :api_secret => ""}

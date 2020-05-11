@@ -1,14 +1,14 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'bandwidth/version'
+require 'old_bandwidth/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "ruby-bandwidth"
-  spec.version       = Bandwidth::VERSION
+  spec.version       = OldBandwidth::VERSION
   spec.authors       = ["Andrey Belchikov"]
-  spec.description   = "Gem for integrating to Bandwidth's Catapult API"
+  spec.description   = "Gem for integrating to OldBandwidth's Catapult API"
   spec.summary       = spec.description
-  spec.homepage      = "https://github.com/Bandwidth/ruby-bandwidth"
+  spec.homepage      = "https://github.com/OldBandwidth/ruby-bandwidth"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

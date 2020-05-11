@@ -2,8 +2,8 @@
 
 require "ruby-bandwidth"
 
-Client = Bandwidth::Client
-Call = Bandwidth::Call
+Client = OldBandwidth::Client
+Call = OldBandwidth::Call
 
 # Fill these options before run this demo
 Client.global_options = {:user_id => "", :api_token => "", :api_secret => ""}

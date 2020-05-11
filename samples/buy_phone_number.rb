@@ -2,9 +2,9 @@
 
 require "ruby-bandwidth"
 
-Client = Bandwidth::Client
-AvailableNumber = Bandwidth::AvailableNumber
-PhoneNumber = Bandwidth::PhoneNumber
+Client = OldBandwidth::Client
+AvailableNumber = OldBandwidth::AvailableNumber
+PhoneNumber = OldBandwidth::PhoneNumber
 
 # Fill these options before run this demo
 Client.global_options = {:user_id => "", :api_token => "", :api_secret => ""}
